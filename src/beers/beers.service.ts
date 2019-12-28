@@ -1,7 +1,11 @@
 import { Injectable } from '@nestjs/common';
+import { CreateBeerDto } from './create-beer.dto';
 
 @Injectable()
 export class BeersService {
+	createBeer() {
+		return 'Create beer action'
+	}
 	getBeers() {
 		return [
 			{
